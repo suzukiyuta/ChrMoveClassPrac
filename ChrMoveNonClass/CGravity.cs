@@ -43,12 +43,12 @@ namespace WindowsFormsApplication1
             label.Left = (int)posx;
             label.Top = (int)posy;
         }
-        /** キャラクターを生成*/
-        public static void InstantiateChr()
-        {
-            we.Add(new CGravity());
-        }
-
+            /** キャラクターを生成*/
+            public static void InstantiateChr()
+            {
+                we.Add(new CGravity());
+            }
+    
        
     }
 

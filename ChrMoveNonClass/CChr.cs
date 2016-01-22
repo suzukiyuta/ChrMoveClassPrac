@@ -69,5 +69,17 @@ namespace WindowsFormsApplication1
             }
 
         }
+        protected void moveX()
+        {
+            float nx = posx + vx;
+            if((nx<0f)||(+label.Width > Form1.ActiveForm.ClientSize.Width))
+            {
+                vx = -vx;
+                nx = posx + vx;
+            }
+            posx = nx;
+            label.Left = (int)posx;
+        }
+        
     }
 }
